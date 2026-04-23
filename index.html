@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>פיוז'ן תל אביב – מסעדת פיוז'ן ים-תיכונית ואסיאתית</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-main">פיוז'ן</span>
+        <span class="logo-sub">תל אביב</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="פתח תפריט">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#menu">תפריט</a></li>
+        <li><a href="#gallery">גלריה</a></li>
+        <li><a href="#contact">צור קשר</a></li>
+        <li><a href="#contact" class="nav-cta">הזמן שולחן</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="mandala mandala-top-right"></div>
+    <div class="mandala mandala-bottom-left"></div>
+    <div class="hero-content">
+      <div class="badge">100% הלכתי כשר</div>
+      <h1 class="hero-title">
+        <span class="title-line1">פיוז'ן</span>
+        <span class="title-line2">תל אביב</span>
+      </h1>
+      <p class="hero-subtitle">מסעדת פיוז'ן ים-תיכונית ואסיאתית</p>
+      <p class="hero-website">fusion-telaviv.co.il</p>
+      <div class="hero-info">
+        <div class="info-item">
+          <span class="info-icon">🕐</span>
+          <div>
+            <strong>פתוח 6 ימים</strong>
+            <span>סגור ביום ו׳</span>
+            <span>12:00 – 22:30</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <strong>שדרות רוטשילד 45</strong>
+            <span>תל אביב–יפו, ישראל</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📞</span>
+          <div>
+            <strong>03-546-5105</strong>
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">לתפריט</a>
+        <a href="#contact" class="btn btn-outline">הזמן שולחן</a>
+      </div>
+    </div>
+
+    <!-- Floating food cards -->
+    <div class="food-card food-card--tl">
+      <div class="food-card__img">
+        <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?w=200&h=200&fit=crop" alt="כופתאות עוף" />
+      </div>
+      <div class="food-card__info">
+        <h4>כופתאות עוף</h4>
+        <p>כופתאות מסורתיות ממולאות עוף, ירקות ורוטב טחינה</p>
+        <div class="food-card__arrow">↙</div>
+      </div>
+      <div class="price-tag">₪42</div>
+    </div>
+
+    <div class="food-card food-card--tr">
+      <div class="food-card__img">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=200&h=200&fit=crop" alt="לאסי מנגו" />
+      </div>
+      <div class="food-card__info">
+        <h4>לאסי מנגו</h4>
+        <p>משקה קרמי ממנגו, חלב ודבש</p>
+        <div class="food-card__arrow">↙</div>
+      </div>
+      <div class="price-tag">₪22</div>
+    </div>
+
+    <div class="food-card food-card--bl">
+      <div class="food-card__img">
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=200&h=200&fit=crop" alt="טיקה מסאלה" />
+      </div>
+      <div class="food-card__info">
+        <h4>טיקה מסאלה</h4>
+        <p>עוף ים-תיכוני בסגנון הודי עם תבלינים עשירים</p>
+        <div class="food-card__arrow">↗</div>
+      </div>
+      <div class="price-tag">₪68</div>
+    </div>
+
+    <div class="food-card food-card--br">
+      <div class="food-card__img">
+        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=200&h=200&fit=crop" alt="עוף חמאה" />
+      </div>
+      <div class="food-card__info">
+        <h4>עוף חמאה</h4>
+        <p>עוף עשיר ב״מרינייד״, מוגש עם אורז בסמטי</p>
+        <div class="food-card__arrow">↖</div>
+      </div>
+      <div class="price-tag">₪72</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="mandala mandala-center-right"></div>
+    <div class="container">
+      <div class="section-tag">הסיפור שלנו</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>פיוז'ן של טעמים, לב של תל אביב</h2>
+          <p>
+            נולדנו מתוך אהבה לשני עולמות קולינריים: המטבח הים-תיכוני העשיר של ישראל
+            והמטבח האסיאתי הריחני והעמוק. אצלנו תגלו שילוב מפתיע של חומוס קרמי לצד
+            קארי מתובל, של פיתה פריכה לצד דאמפלינגס מהבילים.
+          </p>
+          <p>
+            כל מנה מוכנה ממרכיבים טריים שמגיעים ישירות מהשוק, עם דגש על כשרות מלאה
+            ועל חוויה שתגרום לכם לחזור שוב ושוב.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <strong>8+</strong>
+              <span>שנים של ניסיון</span>
+            </div>
+            <div class="stat">
+              <strong>50+</strong>
+              <span>מנות בתפריט</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>כשר</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-grid">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop" alt="מסעדה" class="about-img about-img--large" />
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&h=200&fit=crop" alt="אוכל" class="about-img" />
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=200&h=200&fit=crop" alt="מטבח" class="about-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-tag">התפריט שלנו</div>
+      <h2 class="section-title">מה אנחנו מכינים</h2>
+      <p class="section-subtitle">כל מנה היא מסע קולינרי בין שני עולמות של טעם</p>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-category="starters">ראשונות</button>
+        <button class="tab-btn" data-category="mains">עיקריות</button>
+        <button class="tab-btn" data-category="drinks">שתייה</button>
+        <button class="tab-btn" data-category="desserts">קינוחים</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- starters -->
+        <div class="menu-card" data-category="starters">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?w=300&h=220&fit=crop" alt="כופתאות עוף" />
+            <div class="menu-card__badge">הכי מוזמן</div>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>כופתאות עוף</h3>
+              <span class="menu-card__price">₪42</span>
+            </div>
+            <p>כופתאות מסורתיות ממולאות עוף טרי, ירקות ורוטב טחינה-קארי. מוגשות 8 יחידות.</p>
+            <div class="menu-card__tags">
+              <span>ללא גלוטן</span>
+              <span>חריף קל</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="starters">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&h=220&fit=crop" alt="חומוס-קארי" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>חומוס קארי</h3>
+              <span class="menu-card__price">₪38</span>
+            </div>
+            <p>חומוס ירושלמי קרמי עם שמן זית ותבלינים הודיים. מוגש עם פיתה טרייה.</p>
+            <div class="menu-card__tags">
+              <span>טבעוני</span>
+              <span>ביתי</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="starters">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=300&h=220&fit=crop" alt="סמוסות שרימפס" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>סמוסות ירקות</h3>
+              <span class="menu-card__price">₪35</span>
+            </div>
+            <p>סמוסות פריכות ממולאות תפוחי אדמה, אפונה ותבלינים. מוגשות עם ציאטני מנגו.</p>
+            <div class="menu-card__tags">
+              <span>טבעוני</span>
+              <span>פריך</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="starters">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?w=300&h=220&fit=crop" alt="סלט ים-תיכוני" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>סלט ים-תיכוני פיוז'ן</h3>
+              <span class="menu-card__price">₪45</span>
+            </div>
+            <p>עגבניות, מלפפון, פטרוזיליה, גרגיר הנחלים ורוטב חמוץ-מתוק מתובל בכוסברה.</p>
+            <div class="menu-card__tags">
+              <span>טרי</span>
+              <span>טבעוני</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- mains -->
+        <div class="menu-card" data-category="mains">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=300&h=220&fit=crop" alt="טיקה מסאלה" />
+            <div class="menu-card__badge">מומלץ</div>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>טיקה מסאלה עוף</h3>
+              <span class="menu-card__price">₪68</span>
+            </div>
+            <p>עוף ים-תיכוני בסגנון הודי, צלוי על גחלים עם מרינדה מיוחדת. מוגש עם אורז ופיתה.</p>
+            <div class="menu-card__tags">
+              <span>חריף בינוני</span>
+              <span>ביתי</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="mains">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=300&h=220&fit=crop" alt="עוף חמאה" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>עוף חמאה קלאסי</h3>
+              <span class="menu-card__price">₪72</span>
+            </div>
+            <p>עוף עשיר ורך בקרם עגבניות וחמאה, מוגש עם אורז בסמטי ולחם נאן.</p>
+            <div class="menu-card__tags">
+              <span>עשיר</span>
+              <span>פופולרי</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="mains">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=300&h=220&fit=crop" alt="קארי ירקות" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>קארי ירקות עונתיים</h3>
+              <span class="menu-card__price">₪58</span>
+            </div>
+            <p>קארי ירוק תאילנדי עם ירקות עונתיים, חלב קוקוס ועשבי תיבול טריים.</p>
+            <div class="menu-card__tags">
+              <span>טבעוני</span>
+              <span>חריף קל</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="mains">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=300&h=220&fit=crop" alt="ביריאני עוף" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>ביריאני עוף</h3>
+              <span class="menu-card__price">₪75</span>
+            </div>
+            <p>אורז בסמטי ארוך גרעין עם עוף מתובל, זעפרן, קינמון ושקדים קלויים.</p>
+            <div class="menu-card__tags">
+              <span>חגיגי</span>
+              <span>מסורתי</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- drinks -->
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&h=220&fit=crop" alt="לאסי מנגו" />
+            <div class="menu-card__badge">כי בא לי!</div>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>לאסי מנגו</h3>
+              <span class="menu-card__price">₪22</span>
+            </div>
+            <p>משקה קרמי ממנגו אלפונסו, יוגורט טרי ודבש. מרענן ומשביע.</p>
+            <div class="menu-card__tags">
+              <span>קר</span>
+              <span>מרענן</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&h=220&fit=crop" alt="לימונדה מנתה" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>לימונדה נענע-ג'ינג'ר</h3>
+              <span class="menu-card__price">₪18</span>
+            </div>
+            <p>לימונדה טרייה עם נענע, ג'ינג'ר טרי וקצת חריפות מרעננת.</p>
+            <div class="menu-card__tags">
+              <span>טבעי</span>
+              <span>מרענן</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&h=220&fit=crop" alt="תה מסאלה" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>תה מסאלה</h3>
+              <span class="menu-card__price">₪16</span>
+            </div>
+            <p>תה הודי מסורתי עם הל, קינמון, ג'ינג'ר וחלב סויה. חם ומרגיע.</p>
+            <div class="menu-card__tags">
+              <span>חם</span>
+              <span>מסורתי</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- desserts -->
+        <div class="menu-card" data-category="desserts">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=220&fit=crop" alt="גולאב ג'אמון" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>גולאב ג'אמון</h3>
+              <span class="menu-card__price">₪32</span>
+            </div>
+            <p>כדורי גבינה מטוגנים ברוטב סוכר מבושם ורד, מוגש עם גלידת וניל.</p>
+            <div class="menu-card__tags">
+              <span>מתוק</span>
+              <span>הודי</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="desserts">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&h=220&fit=crop" alt="בקלאווה פיסטוק" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__header">
+              <h3>בקלאווה פיסטוק</h3>
+              <span class="menu-card__price">₪28</span>
+            </div>
+            <p>בקלאווה מסורתית בסגנון ים-תיכוני עם פיסטוק, שקדים ומי ורדים.</p>
+            <div class="menu-card__tags">
+              <span>מתוק</span>
+              <span>ים-תיכוני</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-tag">אווירה</div>
+      <h2 class="section-title">חוו את הסביבה</h2>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" alt="אווירת המסעדה" class="gallery-img gallery-img--large" />
+        <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=400&h=300&fit=crop" alt="שולחנות" class="gallery-img" />
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop" alt="אינטרייר" class="gallery-img" />
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=400&h=300&fit=crop" alt="בר" class="gallery-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Hours -->
+  <section class="contact" id="contact">
+    <div class="mandala mandala-contact-left"></div>
+    <div class="container">
+      <div class="section-tag">בואו לבקר</div>
+      <h2 class="section-title">מצאו אותנו</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>כתובת</h3>
+            <p>שדרות רוטשילד 45</p>
+            <p>תל אביב–יפו, ישראל</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">🕐</div>
+            <h3>שעות פעילות</h3>
+            <ul class="hours-list">
+              <li><span>ראשון – חמישי</span><span>12:00 – 22:30</span></li>
+              <li><span>שבת</span><span>19:00 – 23:00</span></li>
+              <li class="closed"><span>שישי</span><span>סגור</span></li>
+            </ul>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>יצירת קשר</h3>
+            <p><a href="tel:035465105">03-546-5105</a></p>
+            <p><a href="mailto:shalom@fusion-telaviv.co.il">shalom@fusion-telaviv.co.il</a></p>
+            <div class="social-links">
+              <a href="#" aria-label="אינסטגרם" class="social-link">IG</a>
+              <a href="#" aria-label="פייסבוק" class="social-link">FB</a>
+              <a href="#" aria-label="וואטסאפ" class="social-link">WA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h3>הזמן שולחן</h3>
+          <form class="contact-form" id="reservationForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">שם מלא</label>
+                <input type="text" id="name" name="name" placeholder="ישראל ישראלי" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">טלפון</label>
+                <input type="tel" id="phone" name="phone" placeholder="050-000-0000" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">תאריך</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">שעה</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="guests">מספר סועדים</label>
+              <select id="guests" name="guests">
+                <option value="1">1 סועד</option>
+                <option value="2" selected>2 סועדים</option>
+                <option value="3">3 סועדים</option>
+                <option value="4">4 סועדים</option>
+                <option value="5">5 סועדים</option>
+                <option value="6+">6+ סועדים</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="notes">הערות מיוחדות</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="אלרגיות, בקשות מיוחדות..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">שלח הזמנה</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <span>✓</span>
+            <p>ההזמנה התקבלה! נחזור אליכם בהקדם לאישור.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="mandala mandala-footer"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-main">פיוז'ן</span>
+          <span class="logo-sub">תל אביב</span>
+          <p>מסעדת פיוז'ן ים-תיכונית ואסיאתית</p>
+          <p class="footer-badge">100% כשר</p>
+        </div>
+        <div class="footer-links">
+          <h4>ניווט מהיר</h4>
+          <ul>
+            <li><a href="#about">אודות</a></li>
+            <li><a href="#menu">תפריט</a></li>
+            <li><a href="#gallery">גלריה</a></li>
+            <li><a href="#contact">צור קשר</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>פרטי קשר</h4>
+          <p>שדרות רוטשילד 45, תל אביב</p>
+          <p>03-546-5105</p>
+          <p>fusion-telaviv.co.il</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 פיוז'ן תל אביב. כל הזכויות שמורות.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
