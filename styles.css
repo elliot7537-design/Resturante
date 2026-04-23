@@ -64,13 +64,13 @@ ul { list-style: none; }
 
 .mandala::before {
   border: 3px dashed var(--gold);
-  transform: scale(.75);
   opacity: .6;
+  animation: spinCW 35s linear infinite;
 }
 .mandala::after {
   border: 2px solid var(--coral);
-  transform: scale(.5);
   opacity: .4;
+  animation: spinCCW 25s linear infinite;
 }
 
 .mandala-top-right   { width: 320px; height: 320px; top: -80px; left: -80px; }
@@ -888,4 +888,80 @@ ul { list-style: none; }
   .about-image-grid { grid-template-columns: 1fr; }
   .about-img--large { height: 200px; }
   .about-img { height: 160px; }
+}
+
+/* ===== HERO ENTRANCE STAGGER ===== */
+@keyframes heroEnter {
+  from { opacity: 0; transform: translateY(44px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroPop {
+  from { opacity: 0; transform: scale(.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.badge         { animation: heroEnter .7s cubic-bezier(.22,.88,.36,1) .10s both; }
+.title-line1   { animation: heroEnter .9s cubic-bezier(.22,.88,.36,1) .26s both; }
+.title-line2   { animation: heroEnter .9s cubic-bezier(.22,.88,.36,1) .44s both; }
+.hero-subtitle { animation: heroEnter .7s cubic-bezier(.22,.88,.36,1) .60s both; }
+.hero-website  { animation: heroPop   .6s ease                        .74s both; }
+.hero-info     { animation: heroEnter .7s cubic-bezier(.22,.88,.36,1) .90s both; }
+.hero-actions  { animation: heroEnter .7s cubic-bezier(.22,.88,.36,1) 1.06s both; }
+
+/* ===== FOOD CARD FLOAT & ENTRANCE ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
+}
+@keyframes cardIn {
+  from { opacity: 0; transform: scale(.78) translateY(32px); }
+  to   { opacity: 1; transform: scale(1)   translateY(0); }
+}
+
+.food-card--tl { animation: cardIn .8s ease 1.1s both, float 4.0s ease-in-out 2.1s infinite; }
+.food-card--tr { animation: cardIn .8s ease 1.3s both, float 5.0s ease-in-out 2.4s infinite; }
+.food-card--bl { animation: cardIn .8s ease 1.5s both, float 4.5s ease-in-out 2.7s infinite; }
+.food-card--br { animation: cardIn .8s ease 1.7s both, float 6.0s ease-in-out 3.0s infinite; }
+
+/* ===== MANDALA RING ROTATION ===== */
+@keyframes spinCW  {
+  from { transform: scale(.75) rotate(0deg);    }
+  to   { transform: scale(.75) rotate(360deg);  }
+}
+@keyframes spinCCW {
+  from { transform: scale(.5)  rotate(0deg);    }
+  to   { transform: scale(.5)  rotate(-360deg); }
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity .7s cubic-bezier(.22,.88,.36,1), transform .7s cubic-bezier(.22,.88,.36,1);
+}
+.reveal.from-left  { transform: translateX(-44px); }
+.reveal.from-right { transform: translateX(44px); }
+.reveal.in-view    { opacity: 1; transform: none; }
+
+/* ===== ACTIVE NAV LINK ===== */
+.nav-links a.active-link        { color: var(--coral); }
+.nav-links a.active-link::after { width: 100%; }
+
+/* ===== PRICE TAG PULSE ===== */
+@keyframes pricePulse {
+  0%, 100% { box-shadow: 0 4px 12px var(--shadow); }
+  50%       { box-shadow: 0 6px 28px rgba(232,97,77,.5); }
+}
+.price-tag { animation: pricePulse 2.8s ease-in-out infinite; }
+
+/* ===== GALLERY ITEM CLIP ===== */
+.gallery-grid { overflow: visible; }
+.gallery-img  { overflow: hidden; }
+
+/* ===== REDUCE MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
 }
