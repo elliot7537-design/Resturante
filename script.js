@@ -169,3 +169,41 @@ const sectionObs = new IntersectionObserver(entries => {
 }, { threshold: 0.45 });
 
 sections.forEach(s => sectionObs.observe(s));
+
+// ── Instagram like buttons ────────────────────────────
+document.querySelectorAll('.insta-like-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const wasLiked = btn.classList.contains('liked');
+    btn.classList.toggle('liked');
+
+    const card    = btn.closest('.insta-card');
+    const likesEl = card.querySelector('.insta-likes strong');
+    const raw     = likesEl.textContent.replace(/,/g, '');
+    const next    = wasLiked ? parseInt(raw) - 1 : parseInt(raw) + 1;
+    likesEl.textContent = next.toLocaleString('he-IL');
+
+    if (!wasLiked) triggerDblHeart(card);
+  });
+});
+
+// Double-tap image to like
+document.querySelectorAll('.insta-img-wrap').forEach(wrap => {
+  let lastTap = 0;
+  wrap.addEventListener('click', () => {
+    const now = Date.now();
+    if (now - lastTap < 320) {
+      const btn = wrap.closest('.insta-card').querySelector('.insta-like-btn');
+      if (!btn.classList.contains('liked')) btn.click();
+      else triggerDblHeart(wrap.closest('.insta-card'));
+    }
+    lastTap = now;
+  });
+});
+
+function triggerDblHeart(card) {
+  const heart = card.querySelector('.insta-dbl-heart');
+  heart.classList.remove('pop');
+  void heart.offsetWidth;
+  heart.classList.add('pop');
+  setTimeout(() => heart.classList.remove('pop'), 700);
+}
