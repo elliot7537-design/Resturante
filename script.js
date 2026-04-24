@@ -98,7 +98,7 @@ const staggeredGroups = [
   ['.about-text > p',   'from-right'],
   ['.stat',              null],
   ['.about-img',        'from-left'],
-  ['.gallery-img',       null],
+  ['.gallery-item',      null],
   ['.contact-card',     'from-right'],
 ];
 
